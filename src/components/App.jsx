@@ -9,7 +9,7 @@ export function App() {
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
 
-  const btns = ['good', 'neutral', 'bad'];
+  const btns = Object.keys({ good, neutral, bad });
 
   const countTotalFeedback = () => good + neutral + bad;
   const countPositiveFeedbackPercentage = () =>
